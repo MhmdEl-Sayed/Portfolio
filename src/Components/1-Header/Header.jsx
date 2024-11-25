@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <header className=" flex">
       <button
-        onClick={(params) => {
+        onClick={() => {
           setMen(true);
         }}
         className="icon-menu flex"
@@ -48,7 +48,7 @@ const Header = () => {
         </ul>
       </nav>
       <button
-      onClick={(params) => {
+      onClick={() => {
         // senddata
         localStorage.setItem("currentid",theme==="dark"? "light":"dark")
         
@@ -66,7 +66,7 @@ const Header = () => {
           <ul className="model ">
             <li >
            <button className="icon-close"
-           onClick={(params) => {
+           onClick={() => {
             setMen(false);
           }}/>
             

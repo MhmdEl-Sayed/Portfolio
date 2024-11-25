@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import "./hero.css";
 import Lottie from "lottie-react";
 
@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="left-section  ">
         <div className="parent-avatar flex">
           <img
-            src="public\img\WhatsApp Image 2024-02-01 at 7.47.27 PM-modified.webp"
+            src=".\img\WhatsApp Image 2024-02-01 at 7.47.27 PM-modified.webp"
             className="avatar"
             alt=""
           />
@@ -31,7 +31,7 @@ const Hero = () => {
           I am Mohamed El- Sayed a software designer. I have projects using
           html, css and react, and I am professional in many frameworks. I
           specialize in building the visual and interactive aspects of a website
-          or web application. -
+          or web applicatio
         </p>
 
         <div className="all-icons flex">
