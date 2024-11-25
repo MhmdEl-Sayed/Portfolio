@@ -1,0 +1,133 @@
+.contact-us .icon-envelope{
+    color: var(--subtitle);
+    margin-right: 1rem;
+    font-size: 1.8rem;
+}
+.contact-us .title{
+    font-size: 2.1rem;
+    color: var(--title);
+    margin-bottom: 1rem;
+}
+.contact-us .subtitle{
+    color: var(--subtitle);
+    margin-bottom: 2rem;
+    line-height: 1.6rem;
+}
+.contact-us label{
+    color:  var(--subtitle);
+}
+.contact-us #email, .contact-us #message{
+    all: unset;
+    background-color: rgba(63,63,70,0.15);
+    border: 1px solid rgba(63 63 70);
+    width: 16rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.contact-us #email:focus, .contact-us #message:focus{
+    border: 1px solid rgb(21, 187, 21);
+    transition: 0.3s;
+}
+.light .contact-us #email:focus,.light  .contact-us #message:focus{
+    border: 1px solid rgb(27, 29, 27);
+    transition: 0.3s;
+}
+.contact-us #email:hover, .contact-us #message:hover{
+    border: 1px solid rgb(62, 230, 62);
+    transition: 0.3s;
+}
+.light .contact-us #email:hover,.light .contact-us #message:hover{
+    border: 1px solid rgb(59, 65, 59);
+}
+.light .contact-us #email, .light .contact-us #message{
+    background-color: rgb(245, 240, 240);
+    color: rgb(27, 26, 26);
+    border: 1px solid rgb(154, 161, 154);
+
+}
+
+.contact-us #message{
+    min-height: 9rem;
+    resize: vertical;
+}
+.contact-us .submit{
+    background-color: rgba(22, 20, 20, 0.945);
+    text-align: center;
+   padding: 0.60rem 1.5rem;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+    margin-top: 1.8rem;
+    border: 1px solid rgb(63 63 63);
+    border-radius: 5px;
+}
+
+.contact-us .submit:hover{
+    opacity: 1;
+    transition: 0.3s;
+    transform: scale(0.97);
+    display: flex;
+
+}
+.gmail{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+.doneanimation{
+    margin-bottom: 20px;
+}
+.ss{
+    margin-top: 10px;
+}
+.light .gmail{
+color: var(--title);
+  
+}
+
+/* ===========================
+. Responsive design
+==============================
+*/
+@media ( max-width:1200px){
+    .contact-animation{
+        display: none;
+    }
+}
+@media ( max-width:600px){
+    .contact-us form{
+        display: flex;
+        flex-direction: column;
+    }
+    form .flex{
+        flex-direction: column;
+        align-items: start;
+       
+    }
+    .animation{
+        display: none;
+    }
+    form{
+        width: 90%;
+    }
+    
+    .contact-us #email, .contact-us #message{
+        width: 100%;
+        padding: 0rem  0rem;
+        margin-left: 0rem;
+        margin-top: 1rem;
+
+
+    }
+    .contact-us #email{
+        padding: 8px 0;
+      }
+      .contact-us .submit{
+        width: 25%;
+        align-self: center;
+     }
+    
+}

@@ -1,0 +1,133 @@
+/* ======================
+   1. Header Design
+========================= */
+
+Header   {
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+
+Header ul.flex{
+gap: 16px;
+}
+
+Header ul li a{
+    color: var(--title);
+}
+Header button{
+    font-size: 1.2rem;
+}
+
+Header.flex nav{
+    margin-top: 1.2rem;
+    background-color: var(--bgheader);
+    padding: 0.77rem 1.6rem;
+    border-radius: 55px;
+    box-shadow: 1px 1px 20px rgba(102, 100, 100, 0.103) ;
+}
+Header ul li a{
+    opacity: 0.9;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+
+Header ul li a:hover{
+    color: var(--blue);
+    opacity: 1;
+    font-size: 0.9rem;
+}
+Header button.menu{
+    display: none;
+}
+
+
+/* ======================
+   2.MOdels
+========================= */
+header .fixed{
+    backdrop-filter: blur(4px);
+    position: fixed;
+    inset: 0;
+    background-color: rgba(69, 69, 94, 0.644);
+    
+  
+}
+@keyframes moved {
+    0%   {transform:scale(0);}
+    60% {transform:scale(1.2);}
+
+    100% {transform:scale(1);}
+  } 
+
+header  .fixed ul.model {
+animation:moved 0.7s 1 ;
+ width: 75%;
+margin-left: auto;
+margin-right: auto;
+margin-top: 1rem;
+border-radius: 1rem;
+padding: 1rem 2rem ;
+background: var(--secondry);
+}
+header  .fixed ul.model li{
+    
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.77rem;
+  padding-top: 0.5rem;
+}
+header .fixed ul.model  :last-child{
+    border-bottom:none;
+}
+header .fixed ul.model  :first-child{
+    margin-bottom: -1rem;
+    border: none;
+    text-align: right;
+    padding-bottom:0rem;
+    padding-top: 2rem;
+    padding: 0 2px;
+
+}
+header  .fixed ul.model li a{
+    font-size: 1rem;
+}
+
+/* ======================
+   3. Icon Buttons
+========================= */
+ header .icon-menu, header .modes{
+background-color: var(--bgheader);
+height: 2.4rem;
+width: 2.4rem;
+border-radius: 50%;
+justify-content: center;
+color: rgb(164, 168, 172);
+border: 1px solid rgba(250, 202, 114, 0.178);
+}
+header .icon-menu:hover, header .modes:hover{
+color: var(--title);
+border: 1px solid rgba(250, 202, 114, 0.74);
+transition: 0.2s;
+}
+header .icon-close{
+    font-size: 1.5rem;
+}
+header .icon-adjust-brightness{
+    color: orange;
+    box-shadow: 1px 1px 40px rgba(35,35,36,0.165);
+    
+}
+header .icon-close:hover{
+    font-size: 1.7rem;
+    transition: 0.3s;
+    color: crimson;
+    transform: rotate(180deg);
+
+}
+/* ======================
+   4    . Media
+========================= */
+@media ( max-width:700px){
+    Header.flex nav{display: none;}
+    Header button.menu{display: block;}
+}
