@@ -50,6 +50,7 @@ header .fixed{
     position: fixed;
     inset: 0;
     background-color: rgba(69, 69, 94, 0.644);
+    z-index: 3;
     
   
 }
@@ -111,6 +112,7 @@ transition: 0.2s;
 }
 header .icon-close{
     font-size: 1.5rem;
+    color: var(--title);
 }
 header .icon-adjust-brightness{
     color: orange;

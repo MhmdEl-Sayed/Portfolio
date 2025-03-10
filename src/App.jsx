@@ -13,7 +13,7 @@ function App() {
 
 
   useEffect(()=>{
-window.addEventListener("scroll",(params) => {
+window.addEventListener("scroll",() => {
   if (window.scrollY >100) {
     setShowscroll(true)
   }else{

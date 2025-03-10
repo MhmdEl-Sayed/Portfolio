@@ -7,16 +7,26 @@ const myprojects = [
     biggie: "React",
     category: ["React"],
     title:" E-Commerce Built with React and MUI, online shopping.",
-    img: "./img/pexels-n-voitkevich-6214474.jpg",
-    link: "ecommerce-93cac.firebaseapp.com",
+    img: "/img/pexels-cup-of-couple-6956903.jpg",
+    linkk: "https://e-commerce-b-five.vercel.app",
+  },
+  {
+    biggie: "html-css",
+    category: ["html-css"],
+    title:"Here's a simple project description for your Watch",
+    img: "./img/pexels-pixabay-277390.jpg",
+    linkk: "https://hours-website.vercel.app ",
   },
   {
     biggie: "MUI",
     category: ["bootstrap"],
     title:" E-Commerce Built with React and MUI, online shopping.",
     img: "./img/pexels-n-voitkevich-6214474.jpg",
-    link: "ecommerce-93cac.firebaseapp.com",
+    linkk: "https://ecommerce-93cac.firebaseapp.com/",
   },
+
+
+
 ];
 
 const Main = () => {
@@ -90,6 +100,7 @@ const Main = () => {
                 transition={{ type: "spring", damping: 8, stiffness: 60 }}
                 key={item.img}
                 className="card"
+                
               >
                 <img width={230} src={item.img} alt="" />
 
@@ -103,7 +114,7 @@ const Main = () => {
                     </div>
 
                     <div>
-                      <a target="_blank" className="link flex" href={item.link}>
+                      <a target="_blank" className="link flex" href={item.linkk}>
                         View the project
                         <span
                           style={{

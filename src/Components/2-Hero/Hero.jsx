@@ -31,7 +31,7 @@ const Hero = () => {
           I am Mohamed El- Sayed a software designer. I have projects using
           html, css and react, and I am professional in many frameworks. I
           specialize in building the visual and interactive aspects of a website
-          or web applicationnnnrr
+          or web application .
         </p>
 
         <div className="all-icons flex">
